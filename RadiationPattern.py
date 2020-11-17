@@ -80,7 +80,7 @@ for f in range(nf):
   for axis in 'xyz':
       getattr(ax, 'set_{}lim'.format(axis))((-max_radius, max_radius))
   fname = 'rp_%s' %(f)
-  print 'Saving frame', fname
+
   fig.savefig(fname+'.png',bbox='tight')
   #fig.savefig(fname+'.svg',bbox='tight')
   #fig.savefig(fname+'.pdf',bbox='tight')
